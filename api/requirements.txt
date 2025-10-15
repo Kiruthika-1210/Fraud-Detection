@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+xgboost
+bcrypt
+python-jose
+scikit-learn
+pandas
+joblib
+shap
