@@ -1,2 +1,8 @@
-# Fraud-Detection
-Full-stack Fraud Detection System using ML, FastAPI, Streamlit, and Cloud Deployment
+Key Successes Observed:
+Notebook	Purpose	Status	Key Output/Result
+01_Data_Collection.ipynb	Data Loading / Synthetic Data	✅ Success	Loaded creditcard.csv and created a synthetic dataset of 1,000,000 rows with 2,000 fraud cases.
+02_EDA_and_Preprocessing.ipynb	Data Cleaning, Feature Engineering (e.g., Hour, log_amount), and SMOTE Resampling	✅ Success	Loaded the raw data, showed a highly imbalanced class distribution (0.16671% fraud), and later generated a balanced dataset of 2,564,630 total entries (1,282,315 fraud/non-fraud each).
+03_Model_Training.ipynb	Training & Model Selection	✅ Success	XGBoost was trained and achieved an exceptional ROC-AUC of 0.999948, outperforming Logistic Regression (0.934) and Random Forest (0.995). The final XGBoost model was saved.
+04_Model_Explainability.ipynb	SHAP Analysis	✅ Success	The notebook successfully loaded the trained XGBoost model and generated SHAP values and dependence plots, demonstrating clear feature contribution to the fraud prediction.
+05_Final_Pipeline.ipynb	Creating a Production Pipeline	✅ Success	A full Pipeline was created that includes both preprocessing (SimpleImputer, StandardScaler) and the XGBoost classifier. It also includes a hybrid_score function to combine the ML score with a rule-based check. The final pipeline was saved.
+06_Deployment_Testing.ipynb	Testing the Hybrid Pipeline	✅ Success	The saved pipeline was loaded and tested with sample data, successfully generating hybrid scores, which correctly flagged two high-value/new-device transactions with a score of 1.000000 (Suspicious).
