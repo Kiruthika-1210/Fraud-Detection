@@ -6,7 +6,6 @@ bcrypt
 python-jose
 pydantic
 email-validator
-sqlite3
 xgboost
 scikit-learn
 pandas
