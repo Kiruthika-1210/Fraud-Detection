@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-BASE_URL = "https://wallet-fraud-api.onrender.com/"
+BASE_URL = "https://wallet-fraud-api.onrender.com"
 
 st.set_page_config(page_title="Wallet Fraud Dashboard", layout="centered")
 st.title("💳 Wallet Fraud Detection Dashboard")
