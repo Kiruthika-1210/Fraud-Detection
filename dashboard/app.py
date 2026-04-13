@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://wallet-fraud-api.onrender.com/"
 
 st.set_page_config(page_title="Wallet Fraud Dashboard", layout="centered")
 st.title("💳 Wallet Fraud Detection Dashboard")
