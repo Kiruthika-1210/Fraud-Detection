@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+streamlit
+requests
+bcrypt
+python-jose
+pydantic
+email-validator
+sqlite3
